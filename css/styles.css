@@ -62,10 +62,6 @@ a {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    width: 294px;
-    height: 16px;
-    left: 453px;
-    top: 32px;
     color: #212121;
     list-style: none;
     margin-right: 50px;
@@ -75,11 +71,8 @@ a {
     color:  #2196F3;
 } 
 .mail{
-    width: 137px;
-    height: 17px;
-    left: 1078px;
-    top: 32px;
-    margin-right: 48px;
+    width: 161px;
+    margin-right: 30px;
 }
 .header-link-mail{
     font-weight: 500;
@@ -87,19 +80,30 @@ a {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:  #757575;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.tel{
-    width: 122px;
-    height: 16px;
-    left: 1263px;
-    top: 32px;
+.header-icon-mail{
+    display: flex;
+    margin-right: 10px;
+    fill:  currentColor;
 }
 .header-link-tel{
+    width: 142px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:  #757575;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-icon-tel{
+    display: flex;
+    margin-right: 10px;
+    fill:   currentColor;
 }
 /*------title-----*/
 .title-text{
@@ -216,6 +220,7 @@ a {
 .hero-container{
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: #FFFFFF;
 }  
 .hero-title{
     font-size: 36px;
@@ -256,11 +261,22 @@ a {
 .hero-socials-link{
     width: 44px;
     height: 44px;
-    background-color: green;
+    background-color: #FFFFFF;
     border-radius: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
 }
+.hero-socials-icon{
+    fill: currentColor
+}
+.hero-socials-link:hover,
+.hero-socials-link:focus{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
 /*------footer-----*/
 .footer{
     background: #2F303A;
