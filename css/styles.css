@@ -160,9 +160,20 @@ a {
 }
 .about-item{
     list-style: none;
+    margin-left: -30px;
 }
 .about-item + .about-item{
     margin-left: 30px;
+}
+.about-icon{
+    background-color: #F5F4FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.about-icon-svg{
+    margin: 25px 100px 25px 100px;
 }
 .about-title{
     font-size: 14px;
@@ -276,7 +287,42 @@ a {
     background-color: #2196F3;
     color: #FFFFFF;
 }
-
+/*------client-----*/
+.client-title{
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+.client-list{
+    list-style: none;
+    display: flex;
+}
+.client-item{
+    width: 170px;
+    margin-right: 30px;
+    margin-bottom: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+.client-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-icon{
+    margin: 16px 32px 16px 32px;
+    fill: currentColor
+}
 /*------footer-----*/
 .footer{
     background: #2F303A;
