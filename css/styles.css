@@ -154,6 +154,25 @@ a {
     padding-top: 94px;
     
 }
+.about-icon-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.about-icon-item{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+.about-icon-item +.about-icon-item{
+    margin-left: 30px;
+}
 .about-list{
     display: flex;
     margin-left: 30px;
@@ -164,16 +183,6 @@ a {
 }
 .about-item + .about-item{
     margin-left: 30px;
-}
-.about-icon{
-    background-color: #F5F4FA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-.about-icon-svg{
-    margin: 25px 100px 25px 100px;
 }
 .about-title{
     font-size: 14px;
@@ -288,6 +297,10 @@ a {
     color: #FFFFFF;
 }
 /*------client-----*/
+.client{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .client-title{
     font-family: "Roboto", sans-serif;
     font-size: 36px;
@@ -295,16 +308,17 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 .client-list{
     list-style: none;
     display: flex;
+    justify-content: center;
 }
-.client-item{
-    margin-right: 30px;
-    margin-bottom: 94px;
+.client-item + .client-item{
+    margin-left: 30px;
+}
+.client-link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -313,17 +327,12 @@ a {
     border-radius: 4px;
     color: #AFB1B8;
 }
-.client-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .client-icon{
     margin: 16px 32px 16px 32px;
     fill: currentColor
 }
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus{
     color: #2196F3;
     border: 1px solid #2196F3;
 }
@@ -406,25 +415,25 @@ a {
     list-style: none;
     display: flex;
 }
-.footer-item-icon + .footer-item-icon{
-    margin-left: 10px;
-}
-.footer-item-icon:hover,
-.footer-item-icon:focus{
-    background-color: #2196F3;
-}
-.fotter-icon{
-    fill: currentColor;
-}
-.footer-item-icon{
+.footer-icon-link{
     width: 44px;
     height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.footer-item-icon + .footer-item-icon{
+    margin-left: 10px;
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus{
+    background-color: #2196F3;
+}
+.footer-icon{
+    fill: currentColor;
 }
 /*-----portfolio control-----*/
 .gallery{
